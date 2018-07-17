@@ -1,0 +1,260 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.rongcapital.mc2</groupId>
+	<artifactId>me-dependencies</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>me-dependencies</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<me.version>0.0.1-SNAPSHOT</me.version>
+		<junit.version>3.8.1</junit.version>
+		<h2.version>1.4.195</h2.version>
+		<commons-lang3.version>3.7</commons-lang3.version>
+		<commons-codec.version>1.11</commons-codec.version>
+		<commons-collections4.version>4.1</commons-collections4.version>
+		<gson.version>2.8.5</gson.version>
+		<redisson.version>3.7.3</redisson.version>
+		<feign.version>9.6.0</feign.version>
+		<ignite.version>2.5.0</ignite.version>
+		<kafka.version>1.1.0</kafka.version>
+		<djob.version>1.1.6</djob.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-util</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-infrastructure</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-communication</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-feign</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-model</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-commons-api</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-endpoint-protobuf</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-cpm-api</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-cpm-data</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-cpm-domain</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewp-api</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewp-data</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewp-domain</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewa-api</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewa-data</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewa-domain</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewq-api</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewq-data</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.mc2</groupId>
+				<artifactId>me-ewq-domain</artifactId>
+				<version>${me.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${commons-collections4.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson</artifactId>
+				<version>${redisson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-core</artifactId>
+				<version>${feign.version}</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-gson</artifactId>
+				<version>${feign.version}</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-jaxrs</artifactId>
+				<version>${feign.version}</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-jackson-jaxb</artifactId>
+				<version>${feign.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-indexing</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-core</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-spring</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-spring-data</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-aop</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.ignite</groupId>
+				<artifactId>ignite-rest-http</artifactId>
+				<version>${ignite.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-streams</artifactId>
+				<version>${kafka.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.rongcapital.djob</groupId>
+				<artifactId>djob-client</artifactId>
+				<version>${djob.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
